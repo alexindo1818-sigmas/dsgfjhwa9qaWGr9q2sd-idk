@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        li{
+            color: #fff;
+        }
+    </style>
+</head>
+<body style="background-image: url(Buah.jpeg); background-repeat: no-repeat; background-size: cover;">
+        <ol id="Kata2HariIniBosOL" type="1">
+        <li>
+            Klik
+        </li>
+        <li>
+            skibidi
+        </li>
+    </ol>
+    <div id="klik" style="background-color: rgb(126, 126, 126); position: absolute; width: 30vw; aspect-ratio: 1/1; border-radius: 100%; transform: translate(-50%, -50%); left: 50vw; top: 50vh; transition: 0.2s;"></div>   
+    <script>
+        // setting dulu ga sieh 😂😂😂🤑🤮💔
+        const FaktorSkala_Bola = 0.8;
+        const Kata2HariIniBos = ["Roblos", "mincret", "Frotnit", "blokmengo🔥🔥🔥"]
+        // ingat kata para programer di medsos. klo bisa jalan, jangan di sentuh 😡😡😡🙏✌️
+        const klikgng = document.getElementById("klik")
+        klikgng.addEventListener("mousedown", () =>{
+            klikgng.style.transform = `translate(-50%, -50%) scale(${FaktorSkala_Bola})`;
+            const random = Math.floor( Math.random() * Kata2HariIniBos.length)
+            const li = document.createElement("li")
+            li.innerText = Kata2HariIniBos[random]
+            document.getElementById("Kata2HariIniBosOL").appendChild(li)
+        });
+        klikgng.addEventListener("mouseup", () =>{
+            klikgng.style.transform = `translate(-50%, -50%)`;
+        })
+    </script> 
+</body>
+</html>
